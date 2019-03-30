@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import swal from 'sweetalert2'
+
+// declare let swal: any;
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'cozumel-client';
+  title = 'app';
+
+  constructor(
+	){}
+
+  ngOnInit(){
+  	
+	}
 }
