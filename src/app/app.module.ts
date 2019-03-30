@@ -10,6 +10,8 @@ import { HeaderComponent } from './components/home/header/header.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
 import { CategoriesComponent } from './components/home/categories/categories.component';
+import { OffersComponent } from './components/home/offers/offers.component';
+import { FeedbacksComponent } from './components/home/feedbacks/feedbacks.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { CategoriesComponent } from './components/home/categories/categories.com
     HeaderComponent,
     NavbarComponent,
     FooterComponent,
-    CategoriesComponent
+    CategoriesComponent,
+    OffersComponent,
+    FeedbacksComponent
   ],
   imports: [
     BrowserModule,
