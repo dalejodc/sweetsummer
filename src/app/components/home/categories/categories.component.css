@@ -1,20 +1,19 @@
 .full-screen-categories {
-    height: auto;
+    /* Auto to avoid overlapping */
+    height: auto; 
     min-height: auto;
-    padding-top:70px;
-    padding-bottom:100px;
+    padding-top: 70px;
+    padding-bottom: 100px;
 }
 
 .ui.ribbon.label {
-    left: calc( -0px - 1.2em );
-    margin-right: -1.2em;
-    padding-left: calc( 1rem + 1.2em );
+    left: calc(-0px - 1.1em);
     padding-right: 1.2em;
     border-right-color: transparent !important;
 }
 
 .ui.ribbon.label {
-    top:80%;
+    top: 80%;
     float: left;
     padding-top: 9px;
     padding-bottom: 9px;
@@ -71,6 +70,7 @@
     border-radius: 5%;
     margin: 20px;
 }
+
 #eco {
     width: 180px;
     height: 180px;
@@ -125,6 +125,7 @@
     border-radius: 5%;
     margin: 20px;
 }
+
 #water {
     width: 180px;
     height: 180px;
@@ -135,5 +136,3 @@
     border-radius: 5%;
     margin: 20px;
 }
-
-
