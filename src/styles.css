@@ -6,6 +6,7 @@
     --orange-color: #E94E1B;
     --dark-blue-1: #090D16;
     --dark-blue-2: #080B13;
+    --grey-darken: #424242;
 }
 
 /* Text */
@@ -44,4 +45,8 @@ h1, h2, h3, h4, h5, h6, p {
 
 .orange-text{
     color: var(--orange-color)
+}
+
+.grey-darken{
+    color: var(--grey-darken)
 }
