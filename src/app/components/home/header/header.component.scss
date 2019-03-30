@@ -1,0 +1,51 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+.image-header {
+    background-image: url("/src/assets/main-header.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.header-title {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    text-align: left;
+    color: #000;
+
+    @media (max-width: 767px) {
+        padding-left: 30px;
+    }
+
+}
+
+.header-title span.border {
+    background-color: orange;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    line-height: 60px;
+}
+
+p.header-text {
+    color: white;
+    padding-top: 30px;
+    width: 60%;
+    font-size: 15px;
+
+    @media (max-width: 767px) {
+        width: 80%;
+    }
+}
