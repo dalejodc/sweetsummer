@@ -1,0 +1,80 @@
+.ui.ribbon.label {
+    left: calc( -0px - 1.2em );
+    margin-right: -1.2em;
+    padding-left: calc( 1rem + 1.2em );
+    padding-right: 1.2em;
+    border-right-color: transparent !important;
+}
+
+.ui.ribbon.label {
+    top:80%;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Montserrat', sans-serif !important;
+    color: white !important;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+/* .ui[class*="six column"].grid > .row > .column, .ui[class*="six column"].grid > .column:not(.row) {
+    width: 16.66666667%;
+    margin: 25px;
+} */
+
+
+#model {
+    width: 180px;
+    height: 180px;
+    background-image: url("https://images.pexels.com/photos/887826/pexels-photo-887826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5%;
+    margin: 20px;
+}
+
+#beach {
+    width: 180px;
+    height: 180px;
+    background-image: url("https://images.pexels.com/photos/237272/pexels-photo-237272.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5%;
+    margin: 20px;
+}
+
+#boat {
+    width: 180px;
+    height: 180px;
+    background-image: url("https://images.pexels.com/photos/1007836/pexels-photo-1007836.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5%;
+    margin: 20px;
+}
+
+#dolphin {
+    width: 180px;
+    height: 180px;
+    background-image: url("https://images.pexels.com/photos/225869/pexels-photo-225869.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5%;
+    margin: 20px;
+}
+#eco {
+    width: 180px;
+    height: 180px;
+    background-image: url("https://images.pexels.com/photos/917510/pexels-photo-917510.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5%;
+    margin: 20px;
+}
+
+
