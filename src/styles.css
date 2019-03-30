@@ -1,9 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+/******************************************** 
+              Global styles
+*********************************************/
 
 :root {
     --orange-color: #E94E1B;
+    --dark-blue-1: #090D16;
+    --dark-blue-2: #080B13;
 }
 
+/* Text */
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Montserrat', sans-serif ;
+}
+
+/* Font weights */
 .medium {
     font-weight: 400
 }
@@ -13,5 +23,25 @@
 }
 
 .black {
-    font-weight: 900
+    font-weight: 900 
+}
+
+/* Background Colors*/
+
+.dark-blue-1{
+    background-color: var(--dark-blue-1);
+}
+
+.dark-blue-2{
+    background-color: var(--dark-blue-2);
+}
+
+/* Text colors */
+
+.white-text{
+    color: white;
+}
+
+.orange-text{
+    color: var(--orange-color)
 }
