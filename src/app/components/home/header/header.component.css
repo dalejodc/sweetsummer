@@ -1,38 +1,17 @@
-.full-width {
-	height: 100%;
-	min-height: 91vh;
-	background-repeat: no-repeat;
-	background-size: 100% auto;
-	background: -webkit-linear-gradient(to right, #1f4037, #99f2c8); 
-	background: linear-gradient(to right, #1f4037, #99f2c8);
+body,
+html {
+    height: 100%;
+    margin: 0;
 }
 
-.valign-wrapper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
+.image-header {
+    background-image: url("/src/assets/main-header.jpg");
 
-#title{
-	font-size: 74px;
-	color: white;
-}
+    /* Full height */
+    height: 100%;
 
-#subtitle{
-	font-size: 25px;
-	font-weight: 200;
-	color: white;
-}
-
-.plus{
-	color: #84ffff ;
-}
-
-#img-header{
-	margin-top: 80px;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
