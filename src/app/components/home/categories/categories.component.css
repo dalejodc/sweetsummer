@@ -1,3 +1,10 @@
+.full-screen-categories {
+    height: auto;
+    min-height: auto;
+    padding-top:70px;
+    padding-bottom:100px;
+}
+
 .ui.ribbon.label {
     left: calc( -0px - 1.2em );
     margin-right: -1.2em;
@@ -9,6 +16,8 @@
 .ui.ribbon.label {
     top:80%;
     float: left;
+    padding-top: 9px;
+    padding-bottom: 9px;
     padding-left: 10px;
     padding-right: 10px;
     font-family: 'Montserrat', sans-serif !important;
@@ -17,11 +26,7 @@
     letter-spacing: 2px;
 }
 
-/* .ui[class*="six column"].grid > .row > .column, .ui[class*="six column"].grid > .column:not(.row) {
-    width: 16.66666667%;
-    margin: 25px;
-} */
-
+/* Categories */
 
 #model {
     width: 180px;
@@ -70,6 +75,60 @@
     width: 180px;
     height: 180px;
     background-image: url("https://images.pexels.com/photos/917510/pexels-photo-917510.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5%;
+    margin: 20px;
+}
+
+#fishing {
+    width: 180px;
+    height: 180px;
+    background-image: url("https://images.pexels.com/photos/294674/pexels-photo-294674.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5%;
+    margin: 20px;
+}
+
+#mayan {
+    width: 180px;
+    height: 180px;
+    background-image: url("https://images.pexels.com/photos/225284/pexels-photo-225284.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5%;
+    margin: 20px;
+}
+
+#sunset {
+    width: 180px;
+    height: 180px;
+    background-image: url("https://images.pexels.com/photos/189349/pexels-photo-189349.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5%;
+    margin: 20px;
+}
+
+#theme {
+    width: 180px;
+    height: 180px;
+    background-image: url("https://images.pexels.com/photos/784917/pexels-photo-784917.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5%;
+    margin: 20px;
+}
+#water {
+    width: 180px;
+    height: 180px;
+    background-image: url("https://images.pexels.com/photos/696039/pexels-photo-696039.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
