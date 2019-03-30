@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+    --orange-color: #E94E1B;
+}
+
+.medium {
+    font-weight: 400
+}
+
+.bold {
+    font-weight: 700
+}
+
+.black {
+    font-weight: 900
+}

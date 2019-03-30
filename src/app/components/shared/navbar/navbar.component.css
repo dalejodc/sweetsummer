@@ -17,7 +17,7 @@
 .ui.secondary.menu .active.item {
 	box-shadow: none;
 	background: rgba(0, 0, 0, 0.05);
-	border-top: 5px solid orange;
+	border-top: 5px solid var(--orange-color);
 	border-radius: 0 0 0 0;
 }
 
@@ -27,7 +27,7 @@
 }
 
 .ui.secondary.menu a.item:hover {
-	background: orange;
+	background: var(--orange-color);
 	color: white;
 	border-radius: 0 0 0 0;
 	/* padding: 0 0 0 0; */
@@ -36,7 +36,7 @@
 
 .ui.button {
     margin: 17px 0px 17px;
-    background-color: orange;
+    background-color: var(--orange-color);
     color: white;
 }
 
