@@ -3,6 +3,19 @@
     margin-top: 16px;
 }
 
+.image-navbar-mobile {
+    margin-left: 30px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.burger-icon {
+    cursor: pointer;
+    color: var(--orange-color);
+    margin-top: 26px;
+    font-size: 25px;
+}
+
 .ui.secondary.menu {
 	background: white !important;
 	margin-left: -0.35714286em;

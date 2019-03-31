@@ -27,4 +27,15 @@ export class NavbarComponent implements OnInit {
 
     }
 
+    show() {
+        this.showMobileMenu = true;
+
+        // this.checkCurrentRoute();
+    }
+
+    hide() {
+        this.showMobileMenu = false;
+    }
+
+
 }
