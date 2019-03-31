@@ -10,7 +10,7 @@
     <div class=" ui container" style="padding-top: 50px;">
         <div class="ui  column grid center aligned">
             <div *ngFor="let x of categories">
-                <a href="">
+                <a [routerLink]="['/category', x.id]" routerLinkActive="router-link-active" >
                     <div class="column model" [ngStyle]="{'background-image': 'url(' + x.photo_url + ')'}">
                         <div class="ui black ribbon label ">
                             {{ x.name }}

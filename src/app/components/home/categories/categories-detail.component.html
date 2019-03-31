@@ -1,0 +1,29 @@
+<style>
+    .bg {
+        height: 40%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
+
+
+<div *ngIf="category" class="bg animated fadeInDown" [ngStyle]="{'background-image': 'url(' + category.photo_url + ')'}"></div>
+
+<div class="ui container animated fadeIn" *ngIf="category">
+
+    <br>
+    <br>
+    <br>
+    <div class="ui large breadcrumb">
+        <a class="section" [routerLink]="['/']">Home</a>
+        <i class="right chevron icon divider"></i>
+        <a class="section" [routerLink]="['/categories']">Categories</a>
+        <i class="right chevron icon divider"></i>
+        <div class="active section">{{category.name}}</div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <p>{{category.description}}</p>
+</div>
