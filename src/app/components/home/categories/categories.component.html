@@ -1,72 +1,23 @@
-<div class="full-screen-categories" >
+<div class="full-screen-categories">
     <div class="ui contaier">
-
         <div class="section-title">
-            <span class="border-title">TOURS</span><br>
+            <span class="border-title">TOURS</span><br />
         </div>
 
         <h1 class="section-subtitle">CATEGORIES</h1>
     </div>
 
     <div class=" ui container" style="padding-top: 50px;">
-
         <div class="ui  column grid center aligned">
-            
-            <div class="column" id="model">
-                    <div class="ui black ribbon label ">
-                        SNORKELING
+            <div *ngFor="let x of categories">
+                <a href="">
+                    <div class="column model" [ngStyle]="{'background-image': 'url(' + x.photo_url + ')'}">
+                        <div class="ui black ribbon label ">
+                            {{ x.name }}
+                        </div>
                     </div>
+                </a>
             </div>
-            
-            <div class="column" id="beach">
-                    <div class="ui black ribbon label">
-                        BEACH BREAK
-                    </div>
-            </div>
-            <div class="column" id="boat">
-                    <div class="ui black ribbon label">
-                        BOAT TOURS
-                    </div>
-            </div>
-            <div class="column" id="dolphin">
-                    <div class="ui black ribbon label">
-                        DOLPHIN SWIMS
-                    </div>
-            </div>
-            <div class="column" id="eco">
-                    <div class="ui black ribbon label">
-                        ECO TOURS
-                    </div>
-            </div>
-           
-            <div class="column" id="fishing">
-                    <div class="ui black ribbon label ">
-                        FISHING
-                    </div>
-            </div>
-            
-            <div class="column" id="mayan">
-                    <div class="ui black ribbon label">
-                        MAYAN RUINS
-                    </div>
-            </div>
-            <div class="column" id="sunset">
-                    <div class="ui black ribbon label">
-                        SUNSET CRUISES
-                    </div>
-            </div>
-            <div class="column" id="theme">
-                    <div class="ui black ribbon label">
-                        THEME PARKS
-                    </div>
-            </div>
-            <div class="column" id="water">
-                    <div class="ui black ribbon label">
-                        WATER SPORTS
-                    </div>
-            </div>
-
         </div>
-
     </div>
 </div>

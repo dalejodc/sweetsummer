@@ -7,13 +7,13 @@
 }
 
 .ui.ribbon.label {
-    left: calc(-0px - 1.1em);
+    left: calc(-0px - 0em);
     padding-right: 1.2em;
     border-right-color: transparent !important;
 }
 
 .ui.ribbon.label {
-    top: 80%;
+    top: 75%;
     float: left;
     padding-top: 9px;
     padding-bottom: 9px;
@@ -25,15 +25,21 @@
     letter-spacing: 2px;
 }
 
-/* Categories */
+.ui.grid > * {
+    padding-left: 0rem;
+    padding-right: 0rem;
+}
 
-#model {
+/* Categories */
+.model {
     width: 180px;
     height: 180px;
-    background-image: url("https://images.pexels.com/photos/887826/pexels-photo-887826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    /* background-color: blue; */
+    /* background-image: url("https://images.pexels.com/photos/887826/pexels-photo-887826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    transition: all 0.5s ease;
     border-radius: 5%;
     margin: 20px;
 }
@@ -136,3 +142,4 @@
     border-radius: 5%;
     margin: 20px;
 }
+
