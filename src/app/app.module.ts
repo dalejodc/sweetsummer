@@ -15,6 +15,7 @@ import { OffersComponent } from './components/home/offers/offers.component';
 import { FeedbacksComponent } from './components/home/feedbacks/feedbacks.component';
 import { LoginComponent } from './components/admin/login/login.component';
 import { CategoryComponent } from './components/admin/category/category.component';
+import { CategoriesDetailComponent } from './components/home/categories/categories-detail.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { CategoryComponent } from './components/admin/category/category.componen
     OffersComponent,
     FeedbacksComponent,
     LoginComponent,
-    CategoryComponent
+    CategoryComponent,
+    CategoriesDetailComponent
   ],
   imports: [
     BrowserModule,

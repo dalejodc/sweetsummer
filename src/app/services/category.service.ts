@@ -10,12 +10,16 @@ import { Category } from '../models/category';
 
 export class CategoryService {
 
-    private url: string = "http://localhost:5000"
+    private url: string = "https://cozumel-api.herokuapp.com"
 
     constructor(private _http: HttpClient) { }
 
     getCategories(): Observable<Category[]>{
         return this._http.get<Category[]>('https://cozumel-api.herokuapp.com/categories');
+    }
+
+    getCategorieById(id): Observable<Category>{
+        return this._http.get<Category>("https://cozumel-api.herokuapp.com/category/"+id );
     }
     
 }
