@@ -13,6 +13,8 @@ import { FooterComponent } from './components/shared/footer/footer.component';
 import { CategoriesComponent } from './components/home/categories/categories.component';
 import { OffersComponent } from './components/home/offers/offers.component';
 import { FeedbacksComponent } from './components/home/feedbacks/feedbacks.component';
+import { LoginComponent } from './components/admin/login/login.component';
+import { CategoryComponent } from './components/admin/category/category.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { FeedbacksComponent } from './components/home/feedbacks/feedbacks.compon
     FooterComponent,
     CategoriesComponent,
     OffersComponent,
-    FeedbacksComponent
+    FeedbacksComponent,
+    LoginComponent,
+    CategoryComponent
   ],
   imports: [
     BrowserModule,

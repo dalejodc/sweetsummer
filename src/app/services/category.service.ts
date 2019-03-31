@@ -15,7 +15,7 @@ export class CategoryService {
     constructor(private _http: HttpClient) { }
 
     getCategories(): Observable<Category[]>{
-        return this._http.get<Category[]>('http://localhost:8080/categories');
+        return this._http.get<Category[]>('https://cozumel-api.herokuapp.com/categories');
     }
     
 }
