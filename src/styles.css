@@ -10,8 +10,14 @@
 }
 
 /* Text */
-h1, h2, h3, h4, h5, h6, p {
-    font-family: 'Montserrat', sans-serif ;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Font weights */
@@ -24,30 +30,30 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .black {
-    font-weight: 900 
+    font-weight: 900
 }
 
 /* Background Colors*/
 
-.dark-blue-1{
+.dark-blue-1 {
     background-color: var(--dark-blue-1);
 }
 
-.dark-blue-2{
+.dark-blue-2 {
     background-color: var(--dark-blue-2);
 }
 
 /* Text colors */
 
-.white-text{
+.white-text {
     color: white;
 }
 
-.orange-text{
+.orange-text {
     color: var(--orange-color)
 }
 
-.grey-darken{
+.grey-darken {
     color: var(--grey-darken)
 }
 
@@ -55,7 +61,7 @@ h1, h2, h3, h4, h5, h6, p {
 .full-screen {
     height: 100%;
     min-height: 91vh;
-    padding-top:70px;
+    padding-top: 70px;
 }
 
 .section-title {
@@ -85,16 +91,32 @@ h1, h2, h3, h4, h5, h6, p {
 /* To hide an element */
 @media only screen and (max-width: 992px) {
     .hide-on-med-and-down {
-      display: none !important;
+        display: none !important;
     }
-  }
+}
 
-  @media only screen and (min-width: 993px) {
+@media only screen and (min-width: 993px) {
     .hide-on-large-only {
-      display: none !important;
+        display: none !important;
     }
-  }
+}
 
-  .hidden{
+.hidden {
     display: none !important;
+}
+
+/* Navbar general style */
+.ui.menu {
+    margin: 0rem 0em -1px !important;
+}
+
+/* Breadcrum */
+.ui.breadcrumb .active.section {
+    font-weight: bold;
+    color: var(--orange-color);
+}
+
+.ui.breadcrumb a.section {
+    cursor: pointer;
+    color: var(--grey-darken);
 }

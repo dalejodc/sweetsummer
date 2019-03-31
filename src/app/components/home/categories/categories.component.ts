@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 import { CategoryService } from '../../../services/category.service'
 import { Category } from '../../../models/category'
 
@@ -11,11 +13,15 @@ import { Category } from '../../../models/category'
 export class CategoriesComponent implements OnInit {
 
     categories: Category[] = [];
+    showExtraContent: boolean = false;
 
-    constructor(private _categoryService: CategoryService) { }
+    constructor(
+        private _categoryService: CategoryService,
+        private _route: Router) { }
 
     ngOnInit() {
         this.getCategories();
+        this.checkRoute();
     }
 
     getCategories() {
@@ -24,6 +30,13 @@ export class CategoriesComponent implements OnInit {
                 console.log(response);
                 this.categories = response;
             })
+    }
+
+    checkRoute(){
+        console.log(this._route.url)
+        if(this._route.url === '/categories'){
+            this.showExtraContent = true;
+        }
     }
 
 }

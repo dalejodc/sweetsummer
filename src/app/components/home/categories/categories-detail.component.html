@@ -8,6 +8,8 @@
 </style>
 
 
+<app-navbar></app-navbar>
+
 <div *ngIf="category" class="bg animated fadeInDown" [ngStyle]="{'background-image': 'url(' + category.photo_url + ')'}"></div>
 
 <div class="ui container animated fadeIn" *ngIf="category">
@@ -26,4 +28,10 @@
     <br>
     <br>
     <p>{{category.description}}</p>
+</div>
+
+<div class="ui container">
+        <br>
+        <br>
+    <h1>{{category.name}} TRIPS</h1>
 </div>
