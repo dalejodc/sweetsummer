@@ -9,18 +9,10 @@
 
     <div class="ui grid center aligned" style="margin-top: 80px;">
         <div class="column">
-            <div class="ui action input" name="name" [ngClass]="{'animated shake': (name.touched && !name.valid)}">
-                <input class="inp" type="text" [(ngModel)]="user.name" #name="ngModel" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+            <div class="ui action input">
+                <input class="inp" type="text"  required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
                     placeholder="Enter your email address">
-                <button class="btn" (click)="send()" [ngClass]="{'not-allow': name.touched && !name.valid, 'allow':name.valid, 'disable':  !name.valid}">OK</button>
-            </div>
-            <div *ngIf="message" style="padding-top: 30px;">
-                <p class="white-text amimated fadeInUp">Thanks for suscribing!</p>
-            </div>
-            <div class="errors">
-                <p *ngIf="error" class="animated shake">Please type your email</p>
-                <p *ngIf="(name.touched && name.errors?.required)">This field is required</p>
-                <p *ngIf="name.errors?.pattern">You have to write a valid email, example@example.com</p>
+                <button class="btn" >OK</button>
             </div>
         </div>
     </div>

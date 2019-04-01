@@ -4,6 +4,7 @@
     min-height: auto;
     padding-top: 50px;
     padding-bottom: 230px;
+    margin-top: 40px;
 }
 .companies {
     display:flex;
@@ -14,7 +15,7 @@
 }
 
 .brands{
-    padding-top:220px;
+    padding-top:180px;
 
     @media screen and (max-width: 986px) {
         padding-top:100px; 

@@ -3,9 +3,10 @@
     font-family: 'Montserrat', sans-serif !important;
     padding-top: 70px;
     padding-bottom: 70px;
+    max-width: 140%;
 
     @media (max-width: 753px) {
-        padding-left: 60px;
+        padding-left: 30px;
     }
 }
 
