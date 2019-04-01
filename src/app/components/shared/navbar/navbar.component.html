@@ -1,46 +1,63 @@
 <div id="navbar">
-
-    <!-- Desktop Menu -->
-    <div class="ui secondary menu hide-on-med-and-down">
-        <div class="left menu">
-            <img class="image-navbar" src="/src/assets/logos-cozumel/LogoCozumelTours.png" width="69" height="38">
-        </div>
-
-        <div class="right menu">
-            <a class="active item" [routerLink]="['/']" >
-                HOME
-            </a>
-            <a class="item">
-                CRUISE CORNER
-            </a>
-            <a class="item">
-                AIPORT TRANSFER
-            </a>
-            <a class="item">
-                CART
-            </a>
-            <a class="item">
-                TOURS
-            </a>
-            <a class="item">
-                CONTACT US
-            </a>
-
-            <button class="ui button">
-                Login
-            </button>
+    <div class="full-width-mobile-menu mobile-sticky " *ngIf="showMobileMenu">
+        <div class="ui grid">
+            <div class="sixteen column center aligned animated" id="mobile">
+                <h1><a (click)="goTo('home')" id="home-mobile">Home</a></h1>
+                <h1><a (click)="goTo('about')" id="about-mobile">About me</a></h1>
+                <h1><a (click)="goTo('contact')" id="contact-mobile">Contact</a></h1>
+                <h1><a (click)="goTo('works')" id="works-mobile">Works</a></h1>
+                <h1><a (click)="goTo('journal')" id="journal-mobile">Journal</a></h1>
+                <h1><a (click)="goTo('news')" id="news-mobile">News</a></h1>
+                <br>
+                <br>
+                <a><i class="white-text big close icon" (click)="hide()" style="cursor: pointer;"></i></a>
+            </div>
         </div>
     </div>
+<div>
 
-    <div class="ui secondary menu hide-on-large-only">
-        <div class="left menu">
-            <img class="image-navbar-mobile" src="/src/assets/logos-cozumel/LogoCozumelTours.png" width="69" height="38">
+        <div id="navbar">
+            <!-- Desktop Menu -->
+            <div class="ui secondary menu hide-on-med-and-down">
+                <div class="left menu">
+                    <img class="image-navbar" src="/src/assets/logos-cozumel/LogoCozumelTours.png" width="69" height="38">
+                </div>
+
+                <div class="right menu">
+                    <a class="active item" [routerLink]="['/']">
+                        HOME
+                    </a>
+                    <a class="item">
+                        CRUISE CORNER
+                    </a>
+                    <a class="item">
+                        AIPORT TRANSFER
+                    </a>
+                    <a class="item">
+                        CART
+                    </a>
+                    <a class="item">
+                        TOURS
+                    </a>
+                    <a class="item">
+                        CONTACT US
+                    </a>
+
+                    <button class="ui button">
+                        Login
+                    </button>
+                </div>
+            </div>
+
+            <div class="ui secondary menu hide-on-large-only">
+                <div class="left menu">
+                    <img class="image-navbar-mobile" src="/src/assets/logos-cozumel/LogoCozumelTours.png" width="69"
+                        height="38">
+                </div>
+                <div class="right menu">
+                    <i class="white-text bars icon burger-icon" (click)="show()"></i>
+                </div>
+            </div>
+
+
         </div>
-        <div class="right menu">
-            <i class="white-text bars icon burger-icon" (click)="show()" ></i>
-        </div>
-    </div>
-
-
-</div>
-

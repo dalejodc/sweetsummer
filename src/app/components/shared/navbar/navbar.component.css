@@ -59,7 +59,7 @@
     background-repeat: no-repeat;
     padding-top: 95px;
     padding-bottom: 95px;
-    background-color: var(--violet);
+    background-color: #304257;
     z-index: 7;
 }
 
@@ -80,5 +80,14 @@
     top: 0;
     overflow: hidden;
     z-index: 5;
+}
+
+a{
+    color:white;
+    cursor: pointer;
+}
+a:hover {
+    color:var(--orange-color);
+    text-decoration: none;
 }
 
