@@ -1,16 +1,39 @@
 <style>
-    .bg {
+    .header-image {
         height: 40%;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
+
+    .header-title {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-title span.border {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        background-color: var(--dark-blue-2);
+        color: #fff;
+        padding: 10px 10px 10px 10px;
+        font-size: 35px;
+        letter-spacing: 2px;
+        line-height: 60px;
+    }
 </style>
-
-
 <app-navbar></app-navbar>
 
-<div *ngIf="category" class="bg animated fadeInDown" [ngStyle]="{'background-image': 'url(' + category.photo_url + ')'}"></div>
+<div *ngIf="category" class="header-image animated fadeInDown" [ngStyle]="{'background-image': 'url(' + category.photo_url + ')'}">
+    <div class="ui container ">
+        <div class="header-title animated fadeInUp">
+            <span class="border ">{{category.name}}</span><br>
+        </div>
+    </div>
+</div>
 
 <div class="ui container animated fadeIn" *ngIf="category">
 
@@ -27,11 +50,98 @@
     <br>
     <br>
     <br>
-    <p>{{category.description}}</p>
+    <!-- <p>{{category.description}}</p> -->
 </div>
 
 <div class="ui container">
-        <br>
-        <br>
-    <h1>{{category.name}} TRIPS</h1>
+    <div class="ui contaier">
+        <div class="section-title">
+            <span class="border-title"> {{category.name}}</span><br />
+        </div>
+
+        <h1 class="section-subtitle">AVILABLE TRIPS</h1>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="ui column grid center aligned">
+        <div class="red column">
+            <div class="ui items">
+                <div class="item">
+                    <div class="ui small image">
+                        <img src="https://images.pexels.com/photos/734725/pexels-photo-734725.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            widht="200px" height="200px">
+                    </div>
+                    <div class="content">
+                        <div class="header">Arrowhead Valley Camp</div>
+                        <div class="meta">
+                            <span class="price">$1200</span>
+                            <span class="stay">1 Month</span>
+                        </div>
+                        <div class="description">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="blue column">
+
+        </div>
+        <div class="green column">
+
+        </div>
+    </div>
+
+    <div class="ui items">
+        <div class="item">
+            <div class="ui small image">
+                <img src="https://images.pexels.com/photos/734725/pexels-photo-734725.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+            </div>
+            <div class="content">
+                <div class="header">Arrowhead Valley Camp</div>
+                <div class="meta">
+                    <span class="price">$1200</span>
+                    <span class="stay">1 Month</span>
+                </div>
+                <div class="description">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ui small image">
+                <img src="/images/wireframe/image.png">
+            </div>
+            <div class="content">
+                <div class="header">Buck's Homebrew Stayaway</div>
+                <div class="meta">
+                    <span class="price">$1000</span>
+                    <span class="stay">2 Weeks</span>
+                </div>
+                <div class="description">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ui small image">
+                <img src="/images/wireframe/image.png">
+            </div>
+            <div class="content">
+                <div class="header">Astrology Camp</div>
+                <div class="meta">
+                    <span class="price">$1600</span>
+                    <span class="stay">6 Weeks</span>
+                </div>
+                <div class="description">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
