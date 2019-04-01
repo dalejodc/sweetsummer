@@ -1,4 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'app-navbar',
@@ -10,7 +11,8 @@ export class NavbarComponent implements OnInit {
 
     sticky: boolean = false;
     showMobileMenu: boolean = false;
-    constructor() { }
+    
+    constructor(private router: Router) { }
 
     ngOnInit() {
     }
@@ -35,6 +37,15 @@ export class NavbarComponent implements OnInit {
 
     hide() {
         this.showMobileMenu = false;
+    }
+
+    goTo(route: string) {
+        // To check if it is the same route
+        if (this.router.url === `/${route}`) {
+            this.hide();
+        } else {
+            this.router.navigateByUrl(`/${route}`);
+        }
     }
 
 
