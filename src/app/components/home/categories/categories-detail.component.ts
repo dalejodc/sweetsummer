@@ -32,7 +32,7 @@ export class CategoriesDetailComponent implements OnInit {
             this.id = params['id'];
         })
 
-        this._categoryService.getCategorieById(this.id).subscribe(
+        this._categoryService.getCategoryById(this.id).subscribe(
             response=>{
                 this.category = response;
                 console.log(response);

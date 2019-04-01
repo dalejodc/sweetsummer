@@ -65,6 +65,10 @@ export class CategoryComponent implements OnInit {
         })
     }
 
+    cancel(){
+        this.category = new Category();
+    }
+
     openModal() {
         console.log("viene");
 

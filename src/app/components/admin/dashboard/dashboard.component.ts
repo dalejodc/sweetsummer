@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,HostListener } from '@angular/core';
 import { Router } from '@angular/router';
+import { element } from '@angular/core/src/render3/instructions';
+import { not } from '@angular/compiler/src/output/output_ast';
 
 declare var $: any;
 
@@ -16,11 +18,22 @@ export class DashboardComponent implements OnInit {
 
     ngOnInit() {
         // this.showSidenav = true;
-        
+
         setTimeout(() => {
             $('.sidebar').sidebar('scrollLock', true);
         }, 90);
 
+    }
+
+    @HostListener('window:resize', ['$event'])
+    onResize(event) {
+        // console.log(event.target.innerWidth);
+
+        if(event.target.innerWidth < 823){
+            $('.sidebar').sidebar('hide', true);
+        }if(event.target.innerWidth > 823){
+            // $('.sidebar').sidebar('toggle', true);
+        }
     }
 
     logout() {
@@ -33,7 +46,7 @@ export class DashboardComponent implements OnInit {
     ngOnDestroy(): void {
         //Called once, before the instance is destroyed.
         //Add 'implements OnDestroy' to the class.
-        this.showSidenav=false;
+        this.showSidenav = false;
     }
 
 }

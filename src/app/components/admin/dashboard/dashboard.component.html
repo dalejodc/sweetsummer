@@ -1,5 +1,5 @@
-<div >
-    <div class="ui bottom attached segment pushable" *ngIf="showSidenav">
+<div *ngIf="showSidenav">
+    <div class="ui bottom attached segment pushable">
         <div class="ui visible inverted left vertical thin sidebar menu">
             <div class="centered aligned" style="margin: 40px 0px 40px 25px">
                 <img src="../../../../assets/logos-cozumel/LogoCozumelTours.png" alt="" width="100px">
@@ -21,10 +21,8 @@
                 Logout
             </a>
         </div>
-        <div class="pusher">
-            <div class="ui basic segment">
-                <router-outlet></router-outlet>
-            </div>
+        <div class="pusher" id="dimmed">
+            <router-outlet></router-outlet>
         </div>
     </div>
 

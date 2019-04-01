@@ -1,5 +1,5 @@
-<div class="ui container">
-    <h1>Categories</h1>
+<div class="ui container" style="margin-bottom: 80px">
+    <h1 style="margin: 60px 0 40px">Categories</h1>
     <button class="ui secondary button" (click)="openModal()">
         Add Category
     </button>
@@ -10,7 +10,7 @@
         <thead>
             <tr>
                 <th width="60px">ID</th>
-                <th width="360px">Category</th>
+                <th width="320px">Category</th>
                 <th width="260px" class="center aligned">Options</th>
             </tr>
         </thead>
@@ -59,7 +59,7 @@
             </div>
         </div>
         <div class="actions">
-            <div class="ui black deny button">
+            <div class="ui black deny button" (click)="cancel()">
                 Cancel
             </div>
             <div class="ui positive right labeled icon button" (click)="save()">
