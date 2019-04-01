@@ -17,34 +17,34 @@
 }
 
 .ui.secondary.menu {
-	background: white !important;
-	margin-left: -0.35714286em;
-	margin-right: -0.35714286em;
-	border-radius: 0em;
-	border: none;
-	box-shadow: none;
-	padding-right: 40px;
-	margin-top: 0px;
+    background: white !important;
+    margin-left: -0.35714286em;
+    margin-right: -0.35714286em;
+    border-radius: 0em;
+    border: none;
+    box-shadow: none;
+    padding-right: 40px;
+    margin-top: 0px;
 }
 
 .ui.secondary.menu .active.item {
-	box-shadow: none;
-	background: rgba(0, 0, 0, 0.05);
-	border-top: 5px solid var(--orange-color);
-	border-radius: 0 0 0 0;
+    box-shadow: none;
+    background: rgba(0, 0, 0, 0.05);
+    border-top: 5px solid var(--orange-color);
+    border-radius: 0 0 0 0;
 }
 
 .ui.secondary.menu .item {
-	padding-top: 25px;
-	padding-bottom: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .ui.secondary.menu a.item:hover {
-	background: var(--orange-color);
-	color: white;
-	border-radius: 0 0 0 0;
-	/* padding: 0 0 0 0; */
-	height: 69px;
+    background: var(--orange-color);
+    color: white;
+    border-radius: 0 0 0 0;
+    /* padding: 0 0 0 0; */
+    height: 69px;
 }
 
 .ui.button {
@@ -61,6 +61,10 @@
     padding-bottom: 95px;
     background-color: #304257;
     z-index: 7;
+
+    @media (max-width: 767px) {
+        padding-top: 35px;
+    }
 }
 
 .mobile-sticky {
@@ -82,12 +86,24 @@
     z-index: 5;
 }
 
-a{
-    color:white;
+a {
+    color: white;
     cursor: pointer;
+
+    @media (max-width: 767px) {
+        font-size: 20px !important;
+        inline-size: 20px;
+    }
 }
+
 a:hover {
-    color:var(--orange-color);
+    color: var(--orange-color);
     text-decoration: none;
 }
 
+h1 {
+    @media (max-width: 767px) {
+        margin-bottom: 00px !important;
+        margin-top: 0px;
+    }
+}
