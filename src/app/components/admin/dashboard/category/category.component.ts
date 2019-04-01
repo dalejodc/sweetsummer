@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CategoryService } from '../../../../services/category.service'
 import { Category } from '../../../../models/category'
 import { Router } from '@angular/router';
+import swal from 'sweetalert2'
 
 declare var $: any;
 
@@ -32,11 +33,24 @@ export class CategoryComponent implements OnInit {
             })
     }
 
-    save(){
-        console.log(this.category);
+    save() {
+        // console.log(this.category);
 
-        this._categoryService.saveCategory(this.category).subscribe(response=>{
+        this._categoryService.saveCategory(this.category).subscribe(response => {
             console.log(response);
+            const toast = swal.mixin({
+                toast: true,
+                position: 'top-end',
+                showConfirmButton: false,
+                timer: 3000
+            });
+
+            toast({
+                type: 'success',
+                title: 'SweetAlert'
+            })
+
+            this.getCategories();
         })
     }
 
