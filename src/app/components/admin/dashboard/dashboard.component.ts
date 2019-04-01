@@ -1,5 +1,7 @@
 import { Component, OnInit,HostListener } from '@angular/core';
 import { Router } from '@angular/router';
+import { Title } from '@angular/platform-browser';
+
 import { element } from '@angular/core/src/render3/instructions';
 import { not } from '@angular/compiler/src/output/output_ast';
 
@@ -14,10 +16,15 @@ export class DashboardComponent implements OnInit {
 
     showSidenav: boolean = true;
 
-    constructor(private _router: Router) { }
+    constructor(
+        private _router: Router,
+        private titleService: Title 
+        ) { }
 
     ngOnInit() {
         // this.showSidenav = true;
+
+        this.titleService.setTitle('Admin | Cozumel');
 
         setTimeout(() => {
             $('.sidebar').sidebar('scrollLock', true);
