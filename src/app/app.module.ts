@@ -19,6 +19,7 @@ import { NewsletterComponent } from './components/shared/newsletter/newsletter.c
 import { DashboardComponent } from './components/admin/dashboard/dashboard.component';
 import { CategoryComponent } from './components/admin/dashboard/category/category.component';
 import { OurServicesComponent } from './components/home/our-services/our-services.component';
+import { AboutComponent } from './components/home/about/about.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { OurServicesComponent } from './components/home/our-services/our-service
     NewsletterComponent,
     DashboardComponent,
     CategoryComponent,
-    OurServicesComponent
+    OurServicesComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
