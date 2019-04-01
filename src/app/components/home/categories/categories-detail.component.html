@@ -1,43 +1,14 @@
-<style>
-    .header-image {
-        height: 40%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    .header-title {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        width: 100%;
-        text-align: center;
-    }
-
-    .header-title span.border {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 700;
-        background-color: var(--dark-blue-2);
-        color: #fff;
-        padding: 10px 10px 10px 10px;
-        font-size: 35px;
-        letter-spacing: 2px;
-        line-height: 60px;
-    }
-</style>
 <app-navbar></app-navbar>
 
-<div *ngIf="category" class="header-image animated fadeInDown" [ngStyle]="{'background-image': 'url(' + category.photo_url + ')'}">
+<div *ngIf="category" class="header-image animated fadeInUp" [ngStyle]="{'background-image': 'url(' + category.photo_url + ')'}">
     <div class="ui container ">
-        <div class="header-title animated fadeInUp">
+        <div class="header-title animated fadeIn">
             <span class="border ">{{category.name}}</span><br>
         </div>
     </div>
 </div>
 
 <div class="ui container animated fadeIn" *ngIf="category">
-
-    <br>
     <br>
     <br>
     <div class="ui large breadcrumb">
@@ -53,95 +24,296 @@
     <!-- <p>{{category.description}}</p> -->
 </div>
 
+
+
 <div class="ui container">
     <div class="ui contaier">
         <div class="section-title">
-            <span class="border-title"> {{category.name}}</span><br />
+            <span class="border-title" *ngIf="category"> {{category.name}}</span><br />
         </div>
 
         <h1 class="section-subtitle">AVILABLE TRIPS</h1>
     </div>
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-    <div class="ui column grid center aligned">
-        <div class="red column">
-            <div class="ui items">
-                <div class="item">
-                    <div class="ui small image">
-                        <img src="https://images.pexels.com/photos/734725/pexels-photo-734725.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                            widht="200px" height="200px">
-                    </div>
-                    <div class="content">
-                        <div class="header">Arrowhead Valley Camp</div>
-                        <div class="meta">
-                            <span class="price">$1200</span>
-                            <span class="stay">1 Month</span>
-                        </div>
-                        <div class="description">
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="blue column">
-
-        </div>
-        <div class="green column">
-
-        </div>
-    </div>
-
-    <div class="ui items">
-        <div class="item">
-            <div class="ui small image">
-                <img src="https://images.pexels.com/photos/734725/pexels-photo-734725.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
-            </div>
-            <div class="content">
-                <div class="header">Arrowhead Valley Camp</div>
-                <div class="meta">
-                    <span class="price">$1200</span>
-                    <span class="stay">1 Month</span>
-                </div>
-                <div class="description">
-                    <p></p>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="ui small image">
-                <img src="/images/wireframe/image.png">
-            </div>
-            <div class="content">
-                <div class="header">Buck's Homebrew Stayaway</div>
-                <div class="meta">
-                    <span class="price">$1000</span>
-                    <span class="stay">2 Weeks</span>
-                </div>
-                <div class="description">
-                    <p></p>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="ui small image">
-                <img src="/images/wireframe/image.png">
-            </div>
-            <div class="content">
-                <div class="header">Astrology Camp</div>
-                <div class="meta">
-                    <span class="price">$1600</span>
-                    <span class="stay">6 Weeks</span>
-                </div>
-                <div class="description">
-                    <p></p>
-                </div>
-            </div>
-        </div>
-    </div>
 </div>
+
+<div class="ui container" style="margin: 90px 0px 160px 0px;">
+
+    <div class="ui grid">
+
+        <div class="four wide computer eight wide tablet eight wide mobile column">
+            <div class="ui card">
+                <div class="image">
+                    <div class="ui black ribbon label ">
+                        $59.00
+                    </div>
+                    <img src="https://images.pexels.com/photos/1036864/pexels-photo-1036864.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                </div>
+                <div class="content">
+                    <div class="header">Sup Lessons - Intro</div><br>
+                    <div class="meta">
+                        <span class="date">100% Flexible for Any Schedule</span><br>
+                        <span class="date">1.5 Hours - Adults & Kids $59.00</span>
+                    </div>
+
+                    <div class="description">
+                        <div class="ui star rating" data-rating="3"></div>
+                    </div>
+                </div>
+                <div class="extra content right aligned">
+                    <button class="ui button">
+                        Check it!
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="four wide computer eight wide tablet eight wide mobile column">
+            <div class="ui card">
+                <div class="image">
+                    <div class="ui black ribbon label ">
+                        $350.00
+                    </div>
+                    <img src="https://images.pexels.com/photos/699558/pexels-photo-699558.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                </div>
+                <div class="content">
+                    <div class="header">Camping</div><br>
+                    <div class="meta">
+                        <span class="date">Daily. You choose the start time! 4, 6 and 8 hour trip from $350.00</span><br>
+                    </div>
+
+                    <div class="description">
+                        <div class="ui tiny star rating " data-rating="4"></div>
+                    </div>
+                </div>
+                <div class="extra content right aligned">
+                    <button class="ui button">
+                        Check it!
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="four wide computer eight wide tablet eight wide mobile column">
+            <div class="ui card">
+                <div class="image">
+                    <div class="ui black ribbon label ">
+                        $134.25
+                    </div>
+                    <img src="https://images.pexels.com/photos/307008/pexels-photo-307008.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                </div>
+                <div class="content">
+                    <div class="header">Dolphin Swim Adventure</div><br>
+                    <div class="meta">
+                        <span class="date">5 times daily except sundays</span><br>
+                        <span class="date">1 Hour $134.25</span>
+                    </div>
+
+                    <div class="description">
+                        <div class="ui tiny star rating " data-rating="5"></div>
+                    </div>
+                </div>
+                <div class="extra content right aligned">
+                    <button class="ui button">
+                        Check it!
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="four wide computer eight wide tablet eight wide mobile column">
+            <div class="ui card">
+                <div class="image">
+                    <div class="ui black ribbon label ">
+                        $54.00
+                    </div>
+                    <img src="https://images.pexels.com/photos/939729/pexels-photo-939729.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                </div>
+                <div class="content">
+                    <div class="header">Hiking</div><br>
+                    <div class="meta">
+                        <span class="date">All inclusive, Day Pass + Water Park!</span><br>
+                        <span class="date">Adults $54.00 & Kids $45.00</span>
+                    </div>
+
+                    <div class="description">
+                        <div class="ui tiny star rating " data-rating="3"></div>
+                    </div>
+                </div>
+                <div class="extra content right aligned">
+                    <button class="ui button">
+                        Check it!
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="four wide computer eight wide tablet eight wide mobile column">
+            <div class="ui card">
+                <div class="image">
+                    <div class="ui black ribbon label ">
+                        $59.00
+                    </div>
+                    <img src="https://images.pexels.com/photos/1230302/pexels-photo-1230302.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                </div>
+                <div class="content">
+                    <div class="header">Sup Lessons - Intro</div><br>
+                    <div class="meta">
+                        <span class="date">100% Flexible for Any Schedule</span><br>
+                        <span class="date">1.5 Hours - Adults & Kids $59.00</span>
+                    </div>
+
+                    <div class="description">
+                        <div class="ui star rating" data-rating="3"></div>
+                    </div>
+                </div>
+                <div class="extra content right aligned">
+                    <button class="ui button">
+                        Check it!
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="four wide computer eight wide tablet eight wide mobile column">
+            <div class="ui card">
+                <div class="image">
+                    <div class="ui black ribbon label ">
+                        $350.00
+                    </div>
+                    <img src="https://images.pexels.com/photos/269809/pexels-photo-269809.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                </div>
+                <div class="content">
+                    <div class="header">Forest Hiking</div><br>
+                    <div class="meta">
+                        <span class="date">Daily. You choose the start time! 4, 6 and 8 hour trip from $350.00</span><br>
+                    </div>
+
+                    <div class="description">
+                        <div class="ui tiny star rating " data-rating="4"></div>
+                    </div>
+                </div>
+                <div class="extra content right aligned">
+                    <button class="ui button">
+                        Check it!
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="four wide computer eight wide tablet eight wide mobile column">
+            <div class="ui card">
+                <div class="image">
+                    <div class="ui black ribbon label ">
+                        $134.25
+                    </div>
+                    <img src="https://images.pexels.com/photos/287240/pexels-photo-287240.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                </div>
+                <div class="content">
+                    <div class="header">Deluxe</div><br>
+                    <div class="meta">
+                        <span class="date">5 times daily except sundays</span><br>
+                        <span class="date">1 Hour $134.25</span>
+                    </div>
+
+                    <div class="description">
+                        <div class="ui tiny star rating " data-rating="5"></div>
+                    </div>
+                </div>
+                <div class="extra content right aligned">
+                    <button class="ui button">
+                        Check it!
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="four wide computer eight wide tablet eight wide mobile column">
+            <div class="ui card">
+                <div class="image">
+                    <div class="ui black ribbon label ">
+                        $54.00
+                    </div>
+                    <img src="https://images.pexels.com/photos/372098/pexels-photo-372098.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                </div>
+                <div class="content">
+                    <div class="header">Deluxe Beach Resort</div><br>
+                    <div class="meta">
+                        <span class="date">All inclusive, Day Pass + Water Park!</span><br>
+                        <span class="date">Adults $54.00 & Kids $45.00</span>
+                    </div>
+
+                    <div class="description">
+                        <div class="ui tiny star rating " data-rating="3"></div>
+                    </div>
+                </div>
+                <div class="extra content right aligned">
+                    <button class="ui button">
+                        Check it!
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<app-footer></app-footer>
+
+<style>
+    .header-image {
+        height: 40%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .header-title {
+        position: absolute;
+        top: 25%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-title span.border {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        background-color: var(--dark-blue-2);
+        color: #fff;
+        padding: 10px 10px 10px 10px;
+        font-size: 35px;
+        letter-spacing: 2px;
+        line-height: 60px;
+    }
+
+
+    .ui.ribbon.label {
+        left: 0px !important;
+        top: 15% !important;
+        padding-right: 1.2em;
+        border-right-color: transparent !important;
+    }
+
+    .ui.ribbon.label {
+        top: 80%;
+        float: left;
+        padding-top: 11px;
+        padding-bottom: 11px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-family: 'Montserrat', sans-serif !important;
+        color: white !important;
+        background-color: green !important;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+    .ui.cards>.card,
+    .ui.card {
+
+        box-shadow: none;
+        background: #eeeeee;
+        width: 100%;
+        height: 100%;
+    }
+
+    .ui.button {
+        background-color: #2D3E51;
+        color: white;
+    }
+</style>

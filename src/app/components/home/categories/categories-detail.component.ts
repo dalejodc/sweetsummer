@@ -3,10 +3,12 @@ import { ActivatedRoute } from '@angular/router';
 import { CategoryService } from '../../../services/category.service'
 import { Category } from '../../../models/category'
 
+declare var $: any;
+
 @Component({
     selector: 'app-categories-detail',
     templateUrl: './categories-detail.component.html',
-    styles: ['./categories.component.css'],
+    styles: ['./categories-detail.component.css'],
     providers: [CategoryService]
 })
 export class CategoriesDetailComponent implements OnInit {
@@ -20,6 +22,9 @@ export class CategoriesDetailComponent implements OnInit {
 
     ngOnInit() {
         this.getCategoryById();
+
+        $('.ui.rating')
+            .rating({maxRating: 5});
     }
 
     getCategoryById() {
