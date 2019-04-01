@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient,HttpHeaders } from '@angular/common/http';
 
 import { Category } from '../models/category';
 
@@ -11,6 +11,7 @@ import { Category } from '../models/category';
 export class CategoryService {
 
     private url: string = "https://cozumel-api.herokuapp.com"
+    private httpHeaders = new HttpHeaders({'Content-Type': 'application/json'})
 
     constructor(private _http: HttpClient) { }
 
@@ -21,5 +22,10 @@ export class CategoryService {
     getCategorieById(id): Observable<Category>{
         return this._http.get<Category>("https://cozumel-api.herokuapp.com/category/"+id );
     }
+
+    saveCateogory(category: Category):Observable<Category>{
+        return this._http.post<Category>("https://cozumel-api.herokuapp.com/category", category);
+    }
+
     
 }
