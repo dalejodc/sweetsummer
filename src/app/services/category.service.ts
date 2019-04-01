@@ -19,13 +19,13 @@ export class CategoryService {
         return this._http.get<Category[]>('https://cozumel-api.herokuapp.com/categories');
     }
 
-    getCategorieById(id): Observable<Category>{
-        return this._http.get<Category>("https://cozumel-api.herokuapp.com/category/"+id );
-    }
-
     saveCategory(category: Category):Observable<Category>{
         return this._http.post<Category>("https://cozumel-api.herokuapp.com/category", category);
     }
+
+    getCategoryById(id): Observable<Category>{
+        return this._http.get<Category>(`https://cozumel-api.herokuapp.com/category/${id}`)
+      }
 
     
 }

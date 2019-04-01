@@ -54,6 +54,17 @@ export class CategoryComponent implements OnInit {
         })
     }
 
+    edit(id){
+        console.log(id);
+
+        this._categoryService.getCategoryById(id).subscribe(response=>{
+            console.log(response);
+            this.category = response;
+
+            this.openModal();
+        })
+    }
+
     openModal() {
         console.log("viene");
 
