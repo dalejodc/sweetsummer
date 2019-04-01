@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 declare var $: any;
 
@@ -9,10 +10,30 @@ declare var $: any;
 })
 export class DashboardComponent implements OnInit {
 
-    constructor() { }
+    showSidenav: boolean = true;
+
+    constructor(private _router: Router) { }
 
     ngOnInit() {
-        $('.sidebar').sidebar('scrollLock', true);
+        // this.showSidenav = true;
+        
+        setTimeout(() => {
+            $('.sidebar').sidebar('scrollLock', true);
+        }, 90);
+
+    }
+
+    logout() {
+        // $('.sidebar').sidebar('scrollLock', false);
+        $('.sidebar').sidebar('hide', true);
+        this.showSidenav = false;
+        this._router.navigateByUrl(`/`);
+    }
+
+    ngOnDestroy(): void {
+        //Called once, before the instance is destroyed.
+        //Add 'implements OnDestroy' to the class.
+        this.showSidenav=false;
     }
 
 }
