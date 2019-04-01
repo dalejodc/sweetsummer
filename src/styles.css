@@ -125,3 +125,8 @@ p {
     cursor: pointer;
     color: var(--grey-darken);
 }
+
+.ui.grid {
+    margin-left: 0rem !important; 
+    margin-right: 0rem !important; 
+}
