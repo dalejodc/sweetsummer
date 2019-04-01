@@ -16,6 +16,7 @@ import { FeedbacksComponent } from './components/home/feedbacks/feedbacks.compon
 import { LoginComponent } from './components/admin/login/login.component';
 import { CategoryComponent } from './components/admin/category/category.component';
 import { CategoriesDetailComponent } from './components/home/categories/categories-detail.component';
+import { NewsletterComponent } from './components/shared/newsletter/newsletter.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { CategoriesDetailComponent } from './components/home/categories/categori
     FeedbacksComponent,
     LoginComponent,
     CategoryComponent,
-    CategoriesDetailComponent
+    CategoriesDetailComponent,
+    NewsletterComponent
   ],
   imports: [
     BrowserModule,
