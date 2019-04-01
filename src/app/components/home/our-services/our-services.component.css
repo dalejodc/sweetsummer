@@ -1,0 +1,25 @@
+.full-screen-services {
+    /* Auto to avoid overlapping */
+    height: auto; 
+    min-height: auto;
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+
+.ui.cards > .card, .ui.card{
+    box-shadow: none;
+}
+
+.ui.cards > .card > .extra, .ui.card > .extra {
+    border: none !important;
+}
+
+.ui.cards > .card > .content, .ui.card > .content{
+    border: none !important;
+    margin-top: 20px;
+}
+
+.ui.cards > .card > .content p:last-child, .ui.card > .content p:last-child {
+    margin-bottom: 0em;
+    padding: 10px;
+}

@@ -18,6 +18,7 @@ import { CategoriesDetailComponent } from './components/home/categories/categori
 import { NewsletterComponent } from './components/shared/newsletter/newsletter.component';
 import { DashboardComponent } from './components/admin/dashboard/dashboard.component';
 import { CategoryComponent } from './components/admin/dashboard/category/category.component';
+import { OurServicesComponent } from './components/home/our-services/our-services.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { CategoryComponent } from './components/admin/dashboard/category/categor
     CategoriesDetailComponent,
     NewsletterComponent,
     DashboardComponent,
-    CategoryComponent
+    CategoryComponent,
+    OurServicesComponent
   ],
   imports: [
     BrowserModule,

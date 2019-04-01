@@ -47,7 +47,7 @@ export class CategoryComponent implements OnInit {
 
             toast({
                 type: 'success',
-                title: 'SweetAlert'
+                title: 'Category Saved'
             })
 
             this.getCategories();
