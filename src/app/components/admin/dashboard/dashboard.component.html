@@ -1,0 +1,24 @@
+<div class="ui bottom attached segment pushable">
+    <div class="ui visible inverted left vertical thin sidebar menu">
+        <div class="centered aligned" style="margin: 40px 0px 40px 25px">
+            <img src="../../../../assets/logos-cozumel/LogoCozumelTours.png" alt="" width="100px">
+        </div>
+        <a class="item" [routerLink]="['/dashboard/category']" routerLinkActive="active">
+            <i class="block layout icon"></i>
+            Category
+        </a>
+        <a class="item">
+            <i class="smile icon"></i>
+            Trips
+        </a>
+        <a class="item">
+            <i class="calendar icon"></i>
+            Configurations
+        </a>
+    </div>
+    <div class="pusher">
+        <div class="ui basic segment">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
