@@ -34,6 +34,10 @@ export class CategoryComponent implements OnInit {
 
     save(){
         console.log(this.category);
+
+        this._categoryService.saveCategory(this.category).subscribe(response=>{
+            console.log(response);
+        })
     }
 
     openModal() {

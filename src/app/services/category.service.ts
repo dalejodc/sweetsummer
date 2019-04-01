@@ -23,7 +23,7 @@ export class CategoryService {
         return this._http.get<Category>("https://cozumel-api.herokuapp.com/category/"+id );
     }
 
-    saveCateogory(category: Category):Observable<Category>{
+    saveCategory(category: Category):Observable<Category>{
         return this._http.post<Category>("https://cozumel-api.herokuapp.com/category", category);
     }
 
