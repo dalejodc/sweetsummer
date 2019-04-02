@@ -1,3 +1,25 @@
-<p>
-  login works!
-</p>
+<div class="login">
+    <div class="ui grid">
+        <div class=" one wide computer sixteen wide tablet sixteen wide mobile column"></div>
+        <div class=" four wide computer six wide tablet sixteen wide mobile column">
+            <div class="ui segment card-login">
+                <form class="ui form">
+                    <div>
+                        <img src="../../../../../src/assets/logos-cozumel/LogoCozumelTours.png" alt="" width="90%">
+                    </div>
+                    <div class="field" style="margin-top: 50px">
+                        <label>Username</label>
+                        <input name="first-name" placeholder="First Name" type="text" [(ngModel)]="user.username" name="username">
+                    </div>
+                    <div class="field">
+                        <label>Password</label>
+                        <input name="last-name" placeholder="Last Name" type="password" [(ngModel)]="user.password" name="password">
+                    </div>
+
+                    <button class="ui fluid orange button" style="margin-top: 45px" type="submit" (click)="login()">Login</button>
+                </form>
+            </div>
+        </div>
+        <div class=" eleven wide computer sixteen wide tablet sixteen wide mobile column"></div>
+    </div>
+</div>

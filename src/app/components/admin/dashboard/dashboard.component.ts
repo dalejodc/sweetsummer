@@ -47,7 +47,7 @@ export class DashboardComponent implements OnInit {
         // $('.sidebar').sidebar('scrollLock', false);
         $('.sidebar').sidebar('hide', true);
         this.showSidenav = false;
-        this._router.navigateByUrl(`/`);
+        this._router.navigateByUrl(`/login`);
     }
 
     ngOnDestroy(): void {

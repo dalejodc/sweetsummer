@@ -6,6 +6,7 @@ import { CategoriesDetailComponent } from "./components/home/categories/categori
 import { CategoriesComponent } from "./components/home/categories/categories.component";
 
 import { DashboardComponent } from "./components/admin/dashboard/dashboard.component";
+import { LoginComponent } from "./components/admin/login/login.component";
 import { CategoryComponent } from "./components/admin/dashboard/category/category.component";
 
 
@@ -14,6 +15,7 @@ const routes: Routes = [
 	{ path: 'home', component: HomeComponent },
 	{ path: 'category/:id', component: CategoriesDetailComponent },
 	{ path: 'categories', component: CategoriesComponent },
+	{ path: 'login', component: LoginComponent },
 	{
 		path: 'dashboard', component: DashboardComponent, children: [
 			{

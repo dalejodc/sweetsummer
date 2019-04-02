@@ -1,0 +1,16 @@
+.login {
+    /* Auto to avoid overlapping */
+    height: 100%; 
+    min-height: 100%;
+    padding-top: 100px;
+    padding-bottom: 90px;
+    background-color: var(--blue)
+}
+
+.card-login{
+    /* background-color: var(--orange-color); */
+    height: 135%;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}

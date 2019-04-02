@@ -8,7 +8,7 @@
                 <h1><a (click)="goTo('contact')" id="contact-mobile">Airport Transfer</a></h1>
                 <h1><a (click)="goTo('works')" id="works-mobile">Tours</a></h1>
                 <h1><a (click)="goTo('journal')" id="journal-mobile">About Us</a></h1>
-                <h1> <button class="ui button">
+                <h1> <button class="ui button" (click)="goTo('login')">
                         Login
                     </button></h1>
                 <br>
@@ -48,7 +48,7 @@
                         ABOUT US
                     </a>
 
-                    <button class="ui button">
+                    <button class="ui button" [routerLink]="['/login']">
                         Login
                     </button>
                 </div>
