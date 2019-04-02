@@ -83,6 +83,8 @@ export class CategoryComponent implements OnInit {
             this.openModal();
 
         })
+
+        this.category = new Category();
     }
 
     cancel() {
