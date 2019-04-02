@@ -42,10 +42,10 @@
             <div class="description">
                 <div class="ui header">Fill out the form to save a new category</div>
                 <br>
-                <div class="ui form">
+                <form class="ui form" #formCategory="ngForm">
                     <div class="field">
                         <label>Category name</label>
-                        <input placeholder="Full Name" type="text" [(ngModel)]="category.name" name="name">
+                        <input placeholder="Full Name" type="text" [(ngModel)]="category.name" name="name" required>
                     </div>
                     <div class="field">
                         <label>Description</label>
@@ -53,8 +53,17 @@
                     </div>
                     <div class="field">
                         <label>Photo URL</label>
-                        <input placeholder="Full Name" type="text" [(ngModel)]="category.photo_url" name="photo_url">
+                        <input placeholder="Paste a photo URL" type="text" [(ngModel)]="category.photo_url" name="photo_url">
                     </div>
+                </form>
+
+                <div class="ui negative message" *ngIf="errorMessage">
+                    <i class="close icon"></i>
+                    <div class="header">
+                        We're sorry. All the fields are required
+                    </div>
+                    <p>Fill out all the fields
+                    </p>
                 </div>
             </div>
         </div>
@@ -62,10 +71,10 @@
             <div class="ui black deny button" (click)="cancel()">
                 Cancel
             </div>
-            <div class="ui positive right labeled icon button" (click)="save()">
+            <button class="ui positive right labeled icon button" (click)="save()">
                 Save
                 <i class="checkmark icon"></i>
-            </div>
+            </button>
         </div>
     </div>
 </div>
