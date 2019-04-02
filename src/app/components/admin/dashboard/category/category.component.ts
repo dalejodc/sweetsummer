@@ -50,18 +50,21 @@ export class CategoryComponent implements OnInit {
                 title: 'Category Saved'
             })
 
+            this.category = new Category();
+            
             this.getCategories();
         })
     }
-
+    
     edit(id){
         console.log(id);
-
+        
         this._categoryService.getCategoryById(id).subscribe(response=>{
             console.log(response);
             this.category = response;
-
+            
             this.openModal();
+        
         })
     }
 
@@ -70,8 +73,6 @@ export class CategoryComponent implements OnInit {
     }
 
     openModal() {
-        console.log("viene");
-
         $('.ui.modal').modal('show');
     }
 
