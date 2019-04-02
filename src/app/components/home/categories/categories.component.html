@@ -1,14 +1,14 @@
 <app-navbar *ngIf="showExtraContent"></app-navbar>
-<div class="full-screen-categories">
+<div class="full-screen-categories" >
     <div class="ui contaier">
         <div class="section-title">
-            <span class="border-title">TOURS</span><br />
+            <span class="border-title" data-aos="fade-up">TOURS</span><br />
         </div>
 
-        <h1 class="section-subtitle">CATEGORIES</h1>
+        <h1 class="section-subtitle" data-aos="fade-up" data-aos-delay="500">CATEGORIES</h1>
     </div>
 
-    <div class=" ui container" style="padding-top: 50px;">
+    <div class=" ui container" style="padding-top: 50px;" data-aos="fade-up">
         <div class="ui  column grid center aligned">
             <div *ngFor="let x of categories">
                 <a [routerLink]="['/category', x.id]" routerLinkActive="router-link-active" >

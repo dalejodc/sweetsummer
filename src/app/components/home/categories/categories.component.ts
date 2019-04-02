@@ -22,6 +22,8 @@ export class CategoriesComponent implements OnInit {
     ngOnInit() {
         this.getCategories();
         this.checkRoute();
+
+        
     }
 
     getCategories() {
