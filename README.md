@@ -1,13 +1,32 @@
-# Angular 6 + MaterializeCSS
-Proyecto inicial de Angular 6 + MaterializeCSS + jQuery + Material Design Icons + SweetAlert2 + Animated.css 
+# ✈️ Sweer Summer | Travel Agency
+Travel Client SPA with Angular + TypeScript + Semantic UI + HTML5 + CSS3 + SweetAlert.
 
-![imagen](https://user-images.githubusercontent.com/36966980/44313453-5e8dbf00-a3c6-11e8-8337-a4dfb1e8c3e9.png)
+![dev_pack](https://user-images.githubusercontent.com/36966980/52614778-65b6f680-2e58-11e9-98b2-5927c3370143.png)
+<br>
+<br>
+<br>
 
-## Descargar o clonar el proyecto
+![imagen](https://user-images.githubusercontent.com/36966980/55832023-c9b11080-5ad1-11e9-9063-2e60c50efbf0.png)
 
-Luego de descargar el proyecto, ejecutar `npm install` para descargar todas las dependencias del proyecto. En algunas ocasiones es necesario ejecutar el comando con los permisos de Administrador.
+## Run in local
+Clone or download the repository.
+```
+git clone https://github.com/dalejodc/travel-client.git
+```
+## Download dependencies
+To download the dependencies get into the folder project and execute:
+```
+npm install
+```
 
-## Ejecutar la aplicación
+## Development server
 
-Ejecutar `ng serve -o` para correr la aplicación. Con el comando anterior, la aplicación se abrirá en una pestaña del navegador predeterminado. O navegar a `http://localhost:4200/`. 
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+## Free resources taken from
+
+* [Pexels](https://www.pexels.com/) - Free stock photos shared by talented photographers.
+* [Unplash](https://unsplash.com/) - Beautiful, free images and photos that you can download and use for any project.
+* [Freepick](https://www.freepik.com/) - Free Vectors, Stock Photos, PSD and Icons.
+ 
 
