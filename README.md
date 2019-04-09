@@ -1,4 +1,4 @@
-# ✈️ Sweer Summer | Travel Agency
+# ✈️ Sweet Summer | Travel Agency
 Travel Client SPA with Angular + TypeScript + Semantic UI + HTML5 + CSS3 + SweetAlert.
 <br>
 <br>
