@@ -29,7 +29,7 @@ export class CategoriesComponent implements OnInit {
     getCategories() {
         this._categoryService.getCategories().subscribe(
             response => {
-                console.log(response);
+                // console.log(response);
                 this.categories = response;
             })
     }
