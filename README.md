@@ -17,7 +17,7 @@ Check the live demo [here](https://sweetsummer.herokuapp.com/)
 ## Run in local
 Clone or download the repository.
 ```
-git clone https://github.com/dalejodc/travel-client.git
+git clone https://github.com/dalejodc/sweetsummer.git
 ```
 ## Download dependencies
 To download the dependencies get into the folder project and execute:
